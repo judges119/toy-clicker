@@ -2,8 +2,9 @@ var Game = (function() {
   'use strict';
 
   var Game = function() {
-    this.lab = new GameObjects.Lab();
+    this.lab = new GameObjects.Workshop();
     this.research = null;
+    this.buildings = null;
     this.workers = null;
     this.upgrades = null;
     this.achievements = null;

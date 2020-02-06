@@ -3,6 +3,7 @@
     "key": "workers-masterstudents",
     "name": "Master Students",
     "description": "Cheap and enthusiastic workforce, they can save you a lot of work.",
+    "housed": { "key": "building-workshop"},
     "cost_increase": 1.5,
     "state": {
       "cost": 4e1,

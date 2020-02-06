@@ -18,58 +18,58 @@ var GameObjects = (function() {
 
   /** @class Lab
    */
-  var Lab = function() {
+  var Workshop = function() {
     GameObject.apply(this, [{
-                             key : 'lab',
+                             key : 'workshop',
                              state : {
-                               name : 'Give your lab an awesome name!',
-                               detector : 1,
+                               name : 'Dildopolis',
+                               singlePrice : 1,
                                factor : 5,
-                               data : 0,
+                              //  data : 0,
                                money : 0,
                                reputation : 0,
                                clicks : 0,
                                moneyCollected : 0,
                                moneySpent : 0,
-                               dataCollected : 0,
-                               dataSpent : 0,
+                              //  dataCollected : 0,
+                              //  dataSpent : 0,
                                time: 0
                              }
                            }]);
   };
 
-  Lab.prototype = Object.create(GameObject.prototype);
+  Workshop.prototype = Object.create(GameObject.prototype);
 
-  Lab.prototype.constructor = Lab;
+  Workshop.prototype.constructor = Workshop;
 
-  Lab.prototype.getGrant = function() {
-    var addition = this.state.reputation * this.state.factor;
-    this.state.money += addition;
-    this.state.moneyCollected += addition;
-    return addition;
+  // Workshop.prototype.sellStock = function() {
+  //   var addition = this.state.reputation * this.state.factor;
+  //   this.state.money += addition;
+  //   this.state.moneyCollected += addition;
+  //   return addition;
+  // };
+
+  Workshop.prototype.sellSexToy = function(amount) {
+    this.state.money += amount;
+    this.state.moneyCollected += amount;
   };
 
-  Lab.prototype.acquireData = function(amount) {
-    this.state.data += amount;
-    this.state.dataCollected += amount;
-  };
-
-  Lab.prototype.clickDetector = function() {
+  Workshop.prototype.makeSexToy = function() {
     this.state.clicks += 1;
-    this.acquireData(this.state.detector);
+    this.sellSexToy(this.state.singlePrice);
   };
 
-  Lab.prototype.research = function(cost, reputation) {
+  Workshop.prototype.research = function(cost, reputation) {
     if (this.state.data >= cost) {
-      this.state.data -= cost;
-      this.state.dataSpent += cost;
+      this.state.money -= cost;
+      this.state.moneySpent += cost;
       this.state.reputation += reputation;
       return true;
     }
     return false;
   };
 
-  Lab.prototype.buy = function(cost) {
+  Workshop.prototype.buy = function(cost) {
     if (this.state.money >= cost) {
       this.state.money -= cost;
       this.state.moneySpent += cost;
@@ -90,23 +90,23 @@ var GameObjects = (function() {
 
   Research.prototype.constructor = Research;
 
-  Research.prototype.isVisible = function(lab) {
-    if (!lab) {
+  Research.prototype.isVisible = function(workshop) {
+    if (!workshop) {
       return false;
     }
     return this.state.level > 0 ||
-           lab.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           workshop.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Research.prototype.isAvailable = function(lab) {
-    if (!lab) {
+  Research.prototype.isAvailable = function(workshop) {
+    if (!workshop) {
       return false;
     }
-    return lab.state.data >= this.state.cost;
+    return workshop.state.data >= this.state.cost;
   };
 
-  Research.prototype.research = function(lab) {
-    if (lab && lab.research(this.state.cost, this.state.reputation)) {
+  Research.prototype.research = function(workshop) {
+    if (workshop && workshop.research(this.state.cost, this.state.reputation)) {
       this.state.level++;
       if (this.state.info_levels.length > 0 &&
           this.state.level === this.state.info_levels[0]) {
@@ -128,6 +128,34 @@ var GameObjects = (function() {
     return this._info;
   };
 
+  /** @class Building
+   * Implement a workspace for auto-clickers in the game.
+   */
+  var Building = function(obj) {
+    GameObject.apply(this, [obj]);
+    this.state = {
+      purchased: 0,
+  };
+
+  Building.prototype = Object.create(GameObject.prototype);
+
+  Building.prototype.constructor = Building;
+
+  Building.prototype.isVisible = function(workshop) {
+    if (!workshop) {
+      return false;
+    }
+    return this.state.purchased > 0 ||
+           workshop.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+  };
+
+  Building.prototype.isAvailable = function(workshop) {
+    if (!workshop) {
+      return false;
+    }
+    return workshop.state.money >= this.state.cost;
+  };
+
   /** @class Worker
    * Implement an auto-clicker in the game.
    */
@@ -140,23 +168,23 @@ var GameObjects = (function() {
 
   Worker.prototype.constructor = Worker;
 
-  Worker.prototype.isVisible = function(lab) {
-    if (!lab) {
+  Worker.prototype.isVisible = function(workshop) {
+    if (!workshop) {
       return false;
     }
     return this.state.hired > 0 ||
-           lab.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           workshop.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Worker.prototype.isAvailable = function(lab) {
-    if (!lab) {
+  Worker.prototype.isAvailable = function(workshop) {
+    if (!workshop) {
       return false;
     }
-    return lab.state.money >= this.state.cost;
+    return workshop.state.money >= this.state.cost && this.state.hired < (allObjects[this.state.housed.key].state.purchased * allObjects[this.housed.key].state.max);
   };
 
-  Worker.prototype.hire = function(lab) {
-    if (lab && lab.buy(this.state.cost)) {
+  Worker.prototype.hire = function(workshop) {
+    if (workshop && workshop.buy(this.state.cost)) {
       this.state.hired++;
       var cost = this.state.cost;
       this.state.cost = Math.floor(cost * this.cost_increase);

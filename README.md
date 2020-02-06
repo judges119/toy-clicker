@@ -1,7 +1,10 @@
-# Particle Clicker
+# Toy Clicker
 
-An addictive incremental game that teaches players the history of high energy particle physics.
+> This game is NSFW!!!
+> You must be over 18 to play and/or dive into the code.
 
-Developed during the 2014 CERN Webfest over a weekend.
+A skinner-box game where you create sex toy!
 
-Visit [http://cern.ch/particle-clicker](http://cern.ch/particle-clicker) to play the game.
+## Setting
+
+The year is 69AH (After Horny), 69 years after being horny was made illegal. The anti-horny laws have been overturned and you decide to open a sex shop to take advantage of the world's new-found horniness.
