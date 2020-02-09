@@ -134,6 +134,7 @@ var GameObjects = (function() {
   var Building = function(obj) {
     GameObject.apply(this, [obj]);
     this.state.built = 0;
+    this.state.capacity = 0;
   };
 
   Building.prototype = Object.create(GameObject.prototype);
@@ -158,6 +159,7 @@ var GameObjects = (function() {
   Building.prototype.build = function(workshop) {
     if (workshop && workshop.buy(this.state.cost)) {
       this.state.built++;
+      this.state.capacity += this.max;
       var cost = this.state.cost;
       this.state.cost = Math.floor(cost * this.cost_increase);
       return cost;
@@ -189,13 +191,14 @@ var GameObjects = (function() {
     if (!workshop) {
       return false;
     }
-    return workshop.state.money >= this.state.cost && this.state.hired < (allObjects[this.housed].state.built * allObjects[this.housed].max);
+    return workshop.state.money >= this.state.cost && allObjects[this.housed].state.capacity > 0;
   };
 
-  Worker.prototype.hire = function(workshop) {
-    if (workshop && workshop.buy(this.state.cost)) {
+  Worker.prototype.hire = function(workshop, allObjects) {
+    if (workshop && allObjects[this.housed].state.capacity > 0 && workshop.buy(this.state.cost)) {
       this.state.hired++;
       var cost = this.state.cost;
+      allObjects[this.housed].state.capacity = allObjects[this.housed].state.capacity - 1;
       this.state.cost = Math.floor(cost * this.cost_increase);
       return cost;
     }

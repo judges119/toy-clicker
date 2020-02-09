@@ -122,7 +122,7 @@
       return worker.isAvailable(lab, allObjects);
     };
     this.hire = function(worker) {
-      var cost = worker.hire(lab);
+      var cost = worker.hire(lab, allObjects);
       if (cost > 0) {
         UI.showUpdateValue("#update-funding", -cost);
       }

@@ -1,6 +1,6 @@
 [
     {
-      "key": "buildings-tradehall",
+      "key": "buildings-tradeshall",
       "name": "Tradeshall",
       "description": "A large wooden structure with tools, equipment, materials, and lodging.",
       "max": 10,
