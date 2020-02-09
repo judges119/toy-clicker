@@ -4,7 +4,6 @@
       "name": "Vibration",
       "description": "It vibrates!",
       "cost_increase": 1.8,
-      "image": "assets/icons/png/CPV.png",
       "info": "html/CPV.html",
       "state": {
         "clicks": 2e1,
