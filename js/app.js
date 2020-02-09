@@ -176,7 +176,4 @@
   app.controller('StatsController', function($scope) {
     $scope.lab = lab;
   });
-
-  analytics.init();
-  analytics.sendScreen(analytics.screens.main);
 })();

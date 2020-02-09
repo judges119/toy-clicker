@@ -82,7 +82,6 @@ var Helpers = (function () {
     loadFile: loadFile,
     formatNumberPostfix: formatNumberPostfix,
     formatTime: formatTime,
-    validateSaveVersion: validateSaveVersion,
-    analytics: ''
+    validateSaveVersion: validateSaveVersion
   };
 })();
