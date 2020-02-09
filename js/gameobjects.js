@@ -95,7 +95,7 @@ var GameObjects = (function() {
       return false;
     }
     return this.state.level > 0 ||
-           workshop.state.clicks >= this.state.clicks * GLOBAL_VISIBILITY_THRESHOLD;
+           workshop.state.clicks >= this.state.clicks;
   };
 
   Research.prototype.isAvailable = function(workshop) {
