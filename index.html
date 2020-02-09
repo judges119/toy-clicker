@@ -77,7 +77,7 @@
                   <div class="media-body">
                     <h4 class="media-heading">{{ r.state.level > 0 ? r.name : '?????' }} <span ng-show="r.state.level > 0" class="badge">Level {{ r.state.level }}</span></h4>
                     <p ng-show="r.state.level > 0">{{ r.description }}</p>
-                    <p ng-show="r.state.level > 0" class="small">Research yields <strong>{{ r.state.reputation | niceNumber }}</strong> reputation.</p>
+                    <p ng-show="r.state.level > 0" class="small">Research yields <strong>{{ r.state.priceIncrease | currency }}</strong> increase in selling price.</p>
                     <div class="btn-group">
                       <button class="btn btn-primary" ng-disabled="!rc.isAvailable(r)" ng-click="rc.doResearch(r)"><i class="fa fa-cogs"></i> <small>{{ r.state.cost | currency }}</small></button>
                     <button class="btn btn-info {{ r.state.interesting ? 'blink' : '' }}" ng-show="r.state.level > 0" ng-click="rc.showInfo(r)"><i class="fa {{ r.state.interesting ? 'fa-exclamation' : 'fa-info' }}"></i></button>

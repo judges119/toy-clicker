@@ -8,8 +8,8 @@
       "info": "html/CPV.html",
       "state": {
         "clicks": 2e1,
-        "reputation": 1e0,
-        "cost": 1e2,
+        "priceIncrease": 1e0,
+        "cost": 5e1,
         "info_levels": [ 1, 5, 10, 15, 20 ]
       }
     }

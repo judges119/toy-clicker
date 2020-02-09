@@ -59,11 +59,11 @@ var GameObjects = (function() {
     this.sellSexToy(this.state.singlePrice);
   };
 
-  Workshop.prototype.research = function(cost, reputation) {
-    if (this.state.data >= cost) {
+  Workshop.prototype.research = function(cost, priceIncrease) {
+    if (this.state.money >= cost) {
       this.state.money -= cost;
       this.state.moneySpent += cost;
-      this.state.reputation += reputation;
+      this.state.singlePrice += priceIncrease;
       return true;
     }
     return false;
@@ -95,18 +95,18 @@ var GameObjects = (function() {
       return false;
     }
     return this.state.level > 0 ||
-           workshop.state.clicks >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           workshop.state.clicks >= this.state.clicks * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
   Research.prototype.isAvailable = function(workshop) {
     if (!workshop) {
       return false;
     }
-    return workshop.state.clicks >= this.state.cost;
+    return workshop.state.money >= this.state.cost;
   };
 
   Research.prototype.research = function(workshop) {
-    if (workshop && workshop.research(this.state.cost, this.state.reputation)) {
+    if (workshop && workshop.research(this.state.cost, this.state.priceIncrease)) {
       this.state.level++;
       if (this.state.info_levels.length > 0 &&
           this.state.level === this.state.info_levels[0]) {
