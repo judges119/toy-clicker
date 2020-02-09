@@ -31,6 +31,83 @@
         "cost": 2e3,
         "rate": 5e0
       }
+    },
+    {
+      "key": "workers-workers",
+      "name": "Masters",
+      "description": "Operate standard machinery all dayday producing a large quantity of high-quality sex toys",
+      "housed": "buildings-factory",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-robots",
+      "name": "Masters",
+      "description": "Similar to workers. Apparently they don't take breaks but they also tend to break a lot.",
+      "housed": "buildings-factory",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-cyborgs",
+      "name": "Masters",
+      "description": "Humans and robots bow before these half-person, half-machine creations that pump out loads of toys for well... pumping one out.",
+      "housed": "buildings-factory",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-masters-students",
+      "name": "Masters Students",
+      "description": "Tasked with researching better and more novel ways of building toys they're a cheap and enthusiastic resource.",
+      "housed": "buildings-university",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-phd-candidates",
+      "name": "Masters",
+      "description": "Focusing on breaking new ground, these students will hopefully develop new theoretical sex toys.",
+      "housed": "buildings-university",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-postdocs",
+      "name": "Masters",
+      "description": "Experienced and hungry for research grants (and cheap food), these students will do anything.",
+      "housed": "buildings-university",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
+    },
+    {
+      "key": "workers-tenured",
+      "name": "Tenured Professors",
+      "description": "They cost a lot but will also develop the latest and greatest toys and staff problems.",
+      "housed": "buildings-university",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
     }
   ]
   

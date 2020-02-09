@@ -8,6 +8,26 @@
       "state": {
         "cost": 4e1
       }
+    },
+    {
+      "key": "buildings-factory",
+      "name": "Factory",
+      "description": "A huge building with warehouse and construction facilities.",
+      "max": 20,
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 1e5
+      }
+    },
+    {
+      "key": "buildings-university",
+      "name": "University",
+      "description": "A massive campus which allows for the best minds to research and produce the greatest technology.",
+      "max": 20,
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 1e7
+      }
     }
   ]
   
