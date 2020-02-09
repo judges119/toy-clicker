@@ -131,8 +131,8 @@
                 <li class="media" ng-repeat="b in bc.buildings" ng-show="bc.isVisible(b)">
                   <div class="media-body">
                     <h4 class="media-heading">{{ b.name }} <span ng-show="b.state.hired > 0" class="badge">{{ b.state.purchased | niceNumber }}</span></h4>
-                    <p ng-show="b.state.hired > 0">{{ b.description }}</p>
-                    <p ng-show="b.state.hired > 0" class="small">Produce <strong>{{ b.state.rate | niceNumber }}</strong> data per second.</p>
+                    <p ng-show="b.state.built > 0">{{ b.description }}</p>
+                    <p ng-show="b.state.built > 0" class="small">Can hold <strong>{{ b.max * b.state.built | niceNumber }}</strong> workers.</p>
                     <button class="btn btn-primary" ng-disabled="!bc.isAvailable(b)" ng-click="bc.build(b)"><i class="fa fa-user"></i> <small>{{ b.state.cost | currency }}</small></button>
                   </div>
                 </li>
