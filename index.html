@@ -90,7 +90,7 @@
         </div>
       </div>
 
-      <div id="column-lab" class="col-xs-6 col-md-5 col-md-5s col-lg-6 col-no-padding-xs" ng-controller="LabController as lc">
+      <div id="column-lab" class="col-xs-6 col-md-5 col-md-5s col-lg-4 col-no-padding-xs" ng-controller="LabController as lc">
         <input class="hidden-xs" id="labname" value="{{ lc.lab.state.name }}" ng-model="lc.lab.state.name" ng-cloak>
         <hr class="hidden-xs">
         <div id="detector-holder">
@@ -119,6 +119,30 @@
             <strong>Funding</strong><br>
             {{ lc.lab.state.money | currency }}
             <div class="update-value" id="update-funding"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-3s col-lg-2 col-no-padding visible-md-block visible-lg-block">
+        <div class="panel panel-default panel-stick">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <i class="fa fa-users"></i> Buildings
+            </h4>
+          </div>
+          <div class="panel-body scrollable large" id="buildingLarge">
+            <div id="buildingContent" ng-controller="BuildingController as bc">
+              <ul class="media-list" ng-cloak>
+                <li class="media" ng-repeat="b in bc.buildings" ng-show="bc.isVisible(b)">
+                  <div class="media-body">
+                    <h4 class="media-heading">{{ b.name }} <span ng-show="b.state.hired > 0" class="badge">{{ b.state.purchased | niceNumber }}</span></h4>
+                    <p ng-show="b.state.hired > 0">{{ b.description }}</p>
+                    <p ng-show="b.state.hired > 0" class="small">Produce <strong>{{ b.state.rate | niceNumber }}</strong> data per second.</p>
+                    <button class="btn btn-primary" ng-disabled="!bc.isAvailable(b)" ng-click="bc.build(b)"><i class="fa fa-user"></i> <small>{{ b.state.cost | currency }}</small></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

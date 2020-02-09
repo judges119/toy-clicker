@@ -7,6 +7,7 @@
 
   var lab = game.lab;
   var research = game.research;
+  var buildings = game.buildings;
   var workers = game.workers;
   var upgrades = game.upgrades;
   var achievements = game.achievements;
@@ -25,7 +26,7 @@
 
   app.filter('currency', ['$filter', function($filter) {
     return function(input) {
-      return 'JTN ' + $filter('niceNumber')(input);
+      return '$' + $filter('niceNumber')(input);
     };
   }]);
 
@@ -37,7 +38,7 @@
 
   app.controller('DetectorController', function() {
     this.click = function() {
-      lab.clickDetector();
+      lab.makeSexToy();
       detector.addEvent();
       UI.showUpdateValue("#update-data", lab.state.detector);
       return false;
@@ -58,14 +59,14 @@
       UI.showModal('Detector', this._detectorInfo);
     };
     $interval(function() {  // one tick
-      var grant = lab.getGrant();
-      UI.showUpdateValue("#update-funding", grant);
+      // var grant = lab.getGrant();
+      // UI.showUpdateValue("#update-funding", grant);
       var sum = 0;
       for (var i = 0; i < workers.length; i++) {
         sum += workers[i].state.hired * workers[i].state.rate;
       }
       if (sum > 0) {
-        lab.acquireData(sum);
+        lab.sellSexToy(sum);
         UI.showUpdateValue("#update-data", sum);
         detector.addEventExternal(workers.map(function(w) {
           return w.state.hired;
@@ -95,13 +96,29 @@
     };
   }]);
 
+  app.controller('BuildingController', function() {
+    this.buildings = buildings;
+    this.isVisible = function(building) {
+      return building.isVisible(lab);
+    };
+    this.isAvailable = function(building) {
+      return building.isAvailable(lab, allObjects);
+    };
+    this.build = function(building) {
+      var cost = building.build(lab);
+      if (cost > 0) {
+        UI.showUpdateValue("#update-funding", -cost);
+      }
+    };
+  });
+  
   app.controller('HRController', function() {
     this.workers = workers;
     this.isVisible = function(worker) {
       return worker.isVisible(lab);
     };
     this.isAvailable = function(worker) {
-      return worker.isAvailable(lab);
+      return worker.isAvailable(lab, allObjects);
     };
     this.hire = function(worker) {
       var cost = worker.hire(lab);

@@ -18,7 +18,7 @@ var UI = (function () {
       }
       $('.scrollable').height(h - offset + 'px');
 
-      var types = ['research', 'hr', 'upgrades'];
+      var types = ['research', 'building', 'hr', 'upgrades'];
 
       if ($(window).width() < 992) {
         for (var i = 0; i < types.length; i++) {
@@ -150,21 +150,6 @@ var UI = (function () {
     {
       $.cookie('cookielaw', 'informed', { expires: 365 });
       $('#cookielaw').slideUp(300, function() { $('#cookielaw').remove(); });
-    })
-
-    $('#messages-container').append(alert);
-  }
-
-  if (typeof $.cookie('cern60') === 'undefined') {
-    var alert = '<div id="cern60" class="alert alert-info" role="alert">';
-    alert += '<button type="button" class="btn btn-primary">Close</button>';
-    alert += '<i class="fa fa-area-chart alert-glyph"></i> <span class="alert-text"><a class="alert-link" href="http://home.web.cern.ch/about/updates/2014/12/take-part-cern-60-public-computing-challenge" target="_blank">Join the CERN 60 computing challenge!</a></span>';
-    alert += '</div>';
-    alert = $(alert);
-    alert.find('button').click(function ()
-    {
-      $.cookie('cern60', 'closed', { expires: 365 });
-      $('#cern60').slideUp(300, function() { $('#cern60').remove(); });
     })
 
     $('#messages-container').append(alert);

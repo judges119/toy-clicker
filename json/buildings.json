@@ -1,0 +1,13 @@
+[
+    {
+      "key": "buildings-tradehall",
+      "name": "Tradeshall",
+      "description": "A large wooden structure with tools, equipment, materials, and lodging.",
+      "max": 10,
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 4e1
+      }
+    }
+  ]
+  

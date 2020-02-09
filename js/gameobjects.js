@@ -133,8 +133,7 @@ var GameObjects = (function() {
    */
   var Building = function(obj) {
     GameObject.apply(this, [obj]);
-    this.state = {
-      purchased: 0,
+    this.state.built = 0;
   };
 
   Building.prototype = Object.create(GameObject.prototype);
@@ -145,7 +144,7 @@ var GameObjects = (function() {
     if (!workshop) {
       return false;
     }
-    return this.state.purchased > 0 ||
+    return this.state.built > 0 ||
            workshop.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
@@ -154,6 +153,16 @@ var GameObjects = (function() {
       return false;
     }
     return workshop.state.money >= this.state.cost;
+  };
+
+  Building.prototype.build = function(workshop) {
+    if (workshop && workshop.buy(this.state.cost)) {
+      this.state.built++;
+      var cost = this.state.cost;
+      this.state.cost = Math.floor(cost * this.cost_increase);
+      return cost;
+    }
+    return -1;  // not enough money
   };
 
   /** @class Worker
@@ -176,11 +185,11 @@ var GameObjects = (function() {
            workshop.state.money >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
-  Worker.prototype.isAvailable = function(workshop) {
+  Worker.prototype.isAvailable = function(workshop, allObjects) {
     if (!workshop) {
       return false;
     }
-    return workshop.state.money >= this.state.cost && this.state.hired < (allObjects[this.state.housed.key].state.purchased * allObjects[this.housed.key].state.max);
+    return workshop.state.money >= this.state.cost && this.state.hired < (allObjects[this.housed].state.built * allObjects[this.housed].max);
   };
 
   Worker.prototype.hire = function(workshop) {
@@ -292,8 +301,9 @@ var GameObjects = (function() {
 
   // Expose classes in module.
   return {
-    Lab: Lab,
+    Workshop: Workshop,
     Research: Research,
+    Building: Building,
     Worker: Worker,
     Upgrade: Upgrade,
     Achievement: Achievement
