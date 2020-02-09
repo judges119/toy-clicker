@@ -95,14 +95,14 @@ var GameObjects = (function() {
       return false;
     }
     return this.state.level > 0 ||
-           workshop.state.data >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
+           workshop.state.clicks >= this.state.cost * GLOBAL_VISIBILITY_THRESHOLD;
   };
 
   Research.prototype.isAvailable = function(workshop) {
     if (!workshop) {
       return false;
     }
-    return workshop.state.data >= this.state.cost;
+    return workshop.state.clicks >= this.state.cost;
   };
 
   Research.prototype.research = function(workshop) {
