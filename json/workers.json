@@ -9,6 +9,28 @@
         "cost": 4e1,
         "rate": 1e0
       }
+    },
+    {
+      "key": "workers-journeyperson",
+      "name": "Journeypersons",
+      "description": "Qualified workers who know what they're building but need their smoko breaks.",
+      "housed": "buildings-tradehall",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 4e2,
+        "rate": 3e0
+      }
+    },
+    {
+      "key": "workers-masters",
+      "name": "Masters",
+      "description": "Artisans at the craft, they make perfect things surrounded by finished durries.",
+      "housed": "buildings-tradehall",
+      "cost_increase": 1.5,
+      "state": {
+        "cost": 2e3,
+        "rate": 5e0
+      }
     }
   ]
   

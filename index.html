@@ -156,7 +156,8 @@
                   <div class="media-body">
                     <h4 class="media-heading">{{ w.name }} <span ng-show="w.state.hired > 0" class="badge">{{ w.state.hired | niceNumber }}</span></h4>
                     <p ng-show="w.state.hired > 0">{{ w.description }}</p>
-                    <p ng-show="w.state.hired > 0" class="small">Produce <strong>{{ w.state.rate | niceNumber }}</strong> data per second.</p>
+                    <p ng-show="w.state.hired > 0" class="small">Makes one <strong>{{ w.state.rate | currency }}</strong> sex toy per second.</p>
+                    <p ng-show="w.state.hired > 0" class="small">Total of <strong>{{ w.state.rate * w.state.hired | currency }}</strong> per second.</p>
                     <button class="btn btn-primary" ng-disabled="!hrc.isAvailable(w)" ng-click="hrc.hire(w)"><i class="fa fa-user"></i> <small>{{ w.state.cost | currency }}</small></button>
                   </div>
                 </li>
