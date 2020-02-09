@@ -42,29 +42,6 @@ var UI = (function () {
         $('#column-lab').removeAttr('style');
         $('#column-tabs').removeAttr('style');
       }
-
-      if ($(window).width() >= 1200) {
-        if (detector.width != 500) {
-          $('#detector').width(500).height(500);
-          detector.init(500);
-        }
-      } else if ($(window).width() < 768 && $(window).height() - 90 < 300) {
-        var newWidth = $(window).width() - Math.max($(window).width() - ($(window).height() - 90 + 10), 300) - 10;
-        if (detector.width != newWidth) {
-          $('#detector').width(newWidth).height(newWidth);
-          detector.init(newWidth);
-        }
-      } else if ($(window).width() < 992) {
-        if (detector.width != 300) {
-          $('#detector').width(300).height(300);
-          detector.init(300);
-        }
-      } else {
-        if (detector.width != 400) {
-          $('#detector').width(400).height(400);
-          detector.init(400);
-        }
-      }
     }
     
     $(window).resize(resize);

@@ -94,13 +94,13 @@
         <input class="hidden-xs" id="labname" value="{{ lc.lab.state.name }}" ng-model="lc.lab.state.name" ng-cloak>
         <hr class="hidden-xs">
         <div id="detector-holder">
-          <div id="detector" ng-controller="DetectorController as dc">
-            <canvas id="detector-core" width="400" height="400">
-              Your detector. Click on it to generate events.
-            </canvas>
-            <canvas ng-click="dc.click()" id="detector-events" width="400" height="400" class="prevent-select">
-              Your detector. Click on it to generate events.
-            </canvas>
+          <div id="detector" ng-controller="DetectorController as dc" ng-click="dc.click()">
+            <img src="/assets/workbench.svg" alt="Workbench, click to make sex toy">
+            <div class="row status">
+              <div class="col-xs-12 text-center col-no-padding-xs">
+                Your workbench. Click on it to generate make and sell sex toys.
+              </div>
+            </div>
           </div>
         </div>
         <button id="detector-info" class="btn btn-info" ng-click="lc.showDetectorInfo()"><i class="fa fa-info"></i></button>
@@ -201,6 +201,9 @@
         </ul>
         <div id="TabContent" class="tab-content">
           <div class="tab-pane active scrollable" id="research">
+
+          </div>
+          <div class="tab-pane scrollable" id="building">
 
           </div>
           <div class="tab-pane scrollable" id="hr">
@@ -322,7 +325,6 @@
     <script src="js/helpers.js"></script>
     <script src="js/gameobjects.js"></script>
     <script src="js/event.js"></script>
-    <script src="js/detector.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/game.js"></script>
     <script src="js/app.js"></script>

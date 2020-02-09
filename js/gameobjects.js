@@ -22,7 +22,7 @@ var GameObjects = (function() {
     GameObject.apply(this, [{
                              key : 'workshop',
                              state : {
-                               name : 'Dildopolis',
+                               name : 'Sex Toy Central',
                                singlePrice : 1,
                                factor : 5,
                               //  data : 0,

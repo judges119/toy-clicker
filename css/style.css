@@ -28,11 +28,11 @@ h1 br {
   cursor: pointer;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
-#detector canvas {
-  position: absolute;
-  left: 0;
+#detector img {
+  display: inline-block;
   top: 0;
 }
 

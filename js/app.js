@@ -39,7 +39,6 @@
   app.controller('DetectorController', function() {
     this.click = function() {
       lab.makeSexToy();
-      detector.addEvent();
       UI.showUpdateValue("#update-funding", lab.state.singlePrice);
       UI.showUpdateValue("#update-data", 1);
       return false;
@@ -69,9 +68,6 @@
       if (sum > 0) {
         lab.sellSexToy(sum);
         UI.showUpdateValue("#update-funding", sum);
-        detector.addEventExternal(workers.map(function(w) {
-          return w.state.hired;
-        }).reduce(function(a, b){return a + b}, 0));
       }
     }, 1000);
   }]);
