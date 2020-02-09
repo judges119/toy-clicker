@@ -6,9 +6,74 @@
       "cost_increase": 1.8,
       "info": "html/CPV.html",
       "state": {
-        "clicks": 2e1,
+        "clicks": 1e0,
         "priceIncrease": 1e0,
+        "cost": 2e1,
+        "info_levels": [ 1, 5, 10, 15, 20 ]
+      }
+    },
+    {
+      "key": "research-materials",
+      "name": "Materials",
+      "description": "Using better and varied materials.",
+      "cost_increase": 1.7,
+      "info": "html/CPV.html",
+      "state": {
+        "clicks": 2e2,
+        "priceIncrease": 6e0,
+        "cost": 4e2,
+        "info_levels": [ 1, 5, 10, 15, 20 ]
+      }
+    },
+    {
+      "key": "research-waterproofing",
+      "name": "Waterproofing",
+      "description": "Finally, can use it in the bathtub or shower when housemates aren't around. Or when they are!",
+      "cost_increase": 1.6,
+      "info": "html/CPV.html",
+      "state": {
+        "clicks": 8e3,
+        "priceIncrease": 3.3e1,
+        "cost": 1e4,
+        "info_levels": [ 1, 5, 10, 15, 20 ]
+      }
+    },
+    {
+      "key": "research-iot",
+      "name": "Internet Connectivity",
+      "description": "You can track your stats online or you can lease control of it to someone else.",
+      "cost_increase": 1.5,
+      "info": "html/CPV.html",
+      "state": {
+        "clicks": 1e5,
+        "priceIncrease": 1.85e2,
+        "cost": 2e5,
+        "info_levels": [ 1, 5, 10, 15, 20 ]
+      }
+    },
+    {
+      "key": "research-self-cleaning",
+      "name": "Self-cleaning",
+      "description": "Futuristic technology that prevents you needing to wash or clean it (PLEASE CLEAN YOUR PRESENT AGE SEX TOYS)",
+      "cost_increase": 1.4,
+      "info": "html/CPV.html",
+      "state": {
+        "clicks": 2e1,
+        "priceIncrease": 1e3,
         "cost": 5e1,
+        "info_levels": [ 1, 5, 10, 15, 20 ]
+      }
+    },
+    {
+      "key": "research-vr",
+      "name": "Virtual Reality",
+      "description": "This sex toy also includes a virtual reality component, real reality is for losers.",
+      "cost_increase": 1.35,
+      "info": "html/CPV.html",
+      "state": {
+        "clicks": 2e6,
+        "priceIncrease": 5.4e3,
+        "cost": 3e6,
         "info_levels": [ 1, 5, 10, 15, 20 ]
       }
     }
