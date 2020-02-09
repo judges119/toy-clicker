@@ -122,7 +122,7 @@
         <div class="panel panel-default panel-stick">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <i class="fa fa-users"></i> Buildings
+              <i class="fa fa-building"></i> Buildings
             </h4>
           </div>
           <div class="panel-body scrollable large" id="buildingLarge">
@@ -133,7 +133,7 @@
                     <h4 class="media-heading">{{ b.name }} <span ng-show="b.state.hired > 0" class="badge">{{ b.state.purchased | niceNumber }}</span></h4>
                     <p ng-show="b.state.built > 0">{{ b.description }}</p>
                     <p ng-show="b.state.built > 0" class="small">Can hold <strong>{{ b.max * b.state.built | niceNumber }}</strong> workers.</p>
-                    <button class="btn btn-primary" ng-disabled="!bc.isAvailable(b)" ng-click="bc.build(b)"><i class="fa fa-user"></i> <small>{{ b.state.cost | currency }}</small></button>
+                    <button class="btn btn-primary" ng-disabled="!bc.isAvailable(b)" ng-click="bc.build(b)"><i class="fa fa-home"></i> <small>{{ b.state.cost | currency }}</small></button>
                   </div>
                 </li>
               </ul>
