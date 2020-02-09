@@ -130,7 +130,7 @@
               <ul class="media-list" ng-cloak>
                 <li class="media" ng-repeat="b in bc.buildings" ng-show="bc.isVisible(b)">
                   <div class="media-body">
-                    <h4 class="media-heading">{{ b.name }} <span ng-show="b.state.hired > 0" class="badge">{{ b.state.purchased | niceNumber }}</span></h4>
+                    <h4 class="media-heading">{{ b.name }} <span ng-show="b.state.built > 0" class="badge">{{ b.state.built | niceNumber }}</span></h4>
                     <p ng-show="b.state.built > 0">{{ b.description }}</p>
                     <p ng-show="b.state.built > 0" class="small">Can hold <strong>{{ b.max * b.state.built | niceNumber }}</strong> workers.</p>
                     <p ng-show="b.state.built > 0" class="small">Space for <strong>{{ b.state.capacity | niceNumber }}</strong> more workers.</p>
