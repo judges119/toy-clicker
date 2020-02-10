@@ -120,7 +120,7 @@ var UI = (function () {
   if (typeof $.cookie('cookielaw') === 'undefined') {
     var alert = '<div id="cookielaw" class="alert alert-info" role="alert">';
     alert += '<button type="button" class="btn btn-primary">OK</button>';
-    alert += '<i class="fa fa-info-circle alert-glyph"></i> <span class="alert-text">Particle Clicker uses local storage to store your current progress.</span>';
+    alert += '<i class="fa fa-info-circle alert-glyph"></i> <span class="alert-text">Sex Toy Central uses local storage to store your current progress.</span>';
     alert += '</div>';
     alert = $(alert);
     alert.find('button').click(function ()
