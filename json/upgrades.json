@@ -19,7 +19,7 @@
         "description": "As a joke you tell the apprentice to get some tartan paint for new sex toy colours and somehow they bought some.",
         "effect": "Apprentices produce +$2 per second.",
         "icon": "fa-group",
-        "cost": 1e3,
+        "cost": 4e2,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-apprentices1", "property": "used", "threshold": 1 }],
         "constant": 2
@@ -30,7 +30,7 @@
         "description": "Some of the new sex toys have tricky fitting and you tell the apprentice to get you a left handed screwdriver.",
         "effect": "Apprentices produce +$2 per second.",
         "icon": "fa-group",
-        "cost": 7e3,
+        "cost": 7e2,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-apprentices2", "property": "used", "threshold": 1 }],
         "constant": 2
@@ -41,7 +41,7 @@
         "description": "One of the fancy models need some electricity, maybe now we can stump the apprentice... Or not it seems as you feel your hair stand on end as they return.",
         "effect": "Apprentices produce +$2 per second.",
         "icon": "fa-group",
-        "cost": 1e4,
+        "cost": 1e3,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-apprentices3", "property": "used", "threshold": 1 }],
         "constant": 2
@@ -53,7 +53,7 @@
         "description": "Your crafts people need a mid-morning snack. Sauce better not be bloody extra.",
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 4e4,
+        "cost": 4e3,
         "targets": [{ "key": "workers-journeypersons", "property": "rate" }],
         "requirements": [{ "key": "workers-journeypersons", "property": "hired", "threshold": 5 }],
         "factor": 2
@@ -64,7 +64,7 @@
         "description": "What better way to wash down smoko than a choc milk?",
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 9e4,
+        "cost": 9e3,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-journeypersons1", "property": "used", "threshold": 1 }],
         "factor": 2
@@ -75,7 +75,7 @@
         "description": "Can't have smoko without smokes.",
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 3e5,
+        "cost": 3e4,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-journeypersons2", "property": "used", "threshold": 1 }],
         "factor": 2
@@ -87,7 +87,7 @@
         "description": "Treat your masters to a new company car that'll go anywhere, do anything, but also not be taken down to the skids like the apprentices would.",
         "effect": "Masters produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 4e6,
+        "cost": 4e4,
         "targets": [{ "key": "workers-masters", "property": "rate" }],
         "requirements": [{ "key": "workers-masters", "property": "hired", "threshold": 5 }],
         "factor": 2
@@ -98,7 +98,7 @@
         "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
         "effect": "Masters produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 9e6,
+        "cost": 9e4,
         "targets": [{ "key": "workers-masters", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-masters1", "property": "used", "threshold": 1 }],
         "factor": 2
@@ -110,7 +110,7 @@
         "description": "Everyone deserves time to rest, and time to be with family, friends, and themselves.",
         "effect": "Workers produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 1e7,
+        "cost": 1e5,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
         "requirements": [{ "key": "workers-workers", "property": "hired", "threshold": 5 }],
         "factor": 2
@@ -121,7 +121,7 @@
         "description": "What use are people if they're sick and infecting staff? Pay them to stay home and they'll reward you by being more productive.",
         "effect": "Workers produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 3e7,
+        "cost": 3e5,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-workers1", "property": "used", "threshold": 1 }],
         "factor": 2
@@ -132,7 +132,7 @@
         "description": "Pay people to recuperate and they'll come back ready to work twice as hard.",
         "effect": "Workers produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 7e7,
+        "cost": 7e5,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-workers2", "property": "used", "threshold": 1 }],
         "factor": 2
@@ -144,7 +144,7 @@
         "description": "A bit of extra oil helps keep them lubricated, much like good use of sex toys.",
         "effect": "Robots produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 1e8,
+        "cost": 1e6,
         "targets": [{ "key": "workers-robots", "property": "rate" }],
         "requirements": [{ "key": "workers-workers", "property": "hired", "threshold": 5 }],
         "factor": 2
@@ -155,9 +155,32 @@
         "description": "Robots break often so a bit of TLC should help. You should also occasionally get yourself checked up too, even if you think you're okay.",
         "effect": "Robots produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 5e8,
+        "cost": 7e6,
         "targets": [{ "key": "workers-robots", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-robots1", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-workers-cyborgs1",
+        "name": "Extra Oil",
+        "description": "A bit of extra oil helps keep them lubricated, much like good use of sex toys.",
+        "effect": "Cyborgs produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 1e7,
+        "targets": [{ "key": "workers-cyborgs", "property": "rate" }],
+        "requirements": [{ "key": "workers-cyborgs", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-cyborgs2",
+        "name": "Regular Servicing",
+        "description": "Cyborgs break often so a bit of TLC should help. You should also occasionally get yourself checked up too, even if you think you're okay.",
+        "effect": "Cyborgs produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 5e7,
+        "targets": [{ "key": "workers-cyborgs", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-workers-cyborgs1", "property": "used", "threshold": 1 }],
         "factor": 2
     }
 ]
