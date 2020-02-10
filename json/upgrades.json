@@ -191,7 +191,7 @@
         "key": "upgrade-workers-masters-students1",
         "name": "Kinderzimmer",
         "description": "A shared room for all your Master students. Used to be a server room.",
-        "effect": "Master Students produce +2 data per second.",
+        "effect": "Master Students produce twice as much per second.",
         "icon": "fa-group",
         "cost": 2e7,
         "targets": [{ "key": "workers-masters-students", "property": "rate" }],
@@ -202,11 +202,80 @@
         "key": "upgrade-workers-masters-students2",
         "name": "Own desk",
         "description": "Not having to share one is a blessing.",
-        "effect": "Master Students produce twice as much data per second.",
+        "effect": "Master Students produce twice as much per second.",
         "icon": "fa-group",
         "cost": 1e8,
         "targets": [{ "key": "workers-masters-students", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-masters-students1", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-phdstudents1",
+        "name": "Thesis supervision",
+        "description": "Somebody takes care of your PhD Students.",
+        "effect": "PhD Students produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 5e8,
+        "targets": [{ "key": "workers-phdstudents", "property": "rate" }],
+        "requirements": [{ "key": "workers-phdstudents", "property": "hired", "threshold": 5 }],
+        "constant": 16
+    },
+    {
+        "key": "upgrade-phdstudents2",
+        "name": "Own office",
+        "description": "Each PhD student gets a quiet place for themselves.",
+        "effect": "PhD Students produce twice as much data per second.",
+        "icon": "fa-group",
+        "cost": 1e9,
+        "targets": [{ "key": "workers-phdstudents", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-phdstudents1", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-postdocs1",
+        "name": "Project Management Seminar",
+        "description": "Hard work also requires soft skills.",
+        "effect": "Postdocs produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 1e9,
+        "targets": [{ "key": "workers-postdocs", "property": "rate" }],
+        "requirements": [{ "key": "workers-postdocs", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-postdocs2",
+        "name": "Higher Travel Allowances",
+        "description": "Let your Postdocs go to more conferences.",
+        "effect": "Postdocs produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 7.5e9,
+        "targets": [{ "key": "workers-postdocs", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-postdocs1", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-profs1",
+        "name": "More TAs",
+        "description": "Hire extra teaching assistants to take work off your professors' shoulders.",
+        "effect": "Professors produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 5e7,
+        "targets": [{ "key": "workers-tenured", "property": "rate" }],
+        "requirements": [{ "key": "workers-tenured", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-tenured2",
+        "name": "Extra Secretary",
+        "description": "Secretaries have to do a lot of work at University. It's good to have them!",
+        "effect": "Professors produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 5e8,
+        "targets": [{ "key": "workers-tenured", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-tenured1", "property": "used", "threshold": 1 }],
         "factor": 2
     }
 ]
