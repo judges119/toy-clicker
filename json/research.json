@@ -4,12 +4,12 @@
       "name": "Vibration",
       "description": "It vibrates!",
       "cost_increase": 1.8,
-      "info": "html/CPV.html",
+      "info": "html/vibrate.html",
       "state": {
         "clicks": 1e0,
         "priceIncrease": 1e0,
         "cost": 2e1,
-        "info_levels": [ 1, 5, 10, 15, 20 ]
+        "info_levels": [ 1, 5 ]
       }
     },
     {
