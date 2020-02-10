@@ -7,7 +7,10 @@
         "icon": "fa-group",
         "cost": 4e2,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
-        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "requirements": [
+            { "key": "workers-apprentices", "property": "hired", "threshold": 5 },
+            { "key": "workers-journeypersons", "property": "hired", "threshold": 1 }
+        ],
         "constant": 2
     },
     {
@@ -18,7 +21,7 @@
         "icon": "fa-group",
         "cost": 1e3,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
-        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-apprentices1", "property": "used", "threshold": 1 }],
         "constant": 2
     },
     {
@@ -29,7 +32,7 @@
         "icon": "fa-group",
         "cost": 7e3,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
-        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-apprentices2", "property": "used", "threshold": 1 }],
         "constant": 2
     },
     {
@@ -40,11 +43,10 @@
         "icon": "fa-group",
         "cost": 1e4,
         "targets": [{ "key": "workers-apprentices", "property": "rate" }],
-        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-apprentices3", "property": "used", "threshold": 1 }],
         "constant": 2
-    }
-
-    ,
+    },
+    
     {
         "key": "upgrade-workers-journeypersons1",
         "name": "Sausage Roll",
@@ -52,6 +54,51 @@
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
         "cost": 4e4,
+        "targets": [{ "key": "workers-journeypersons", "property": "rate" }],
+        "requirements": [{ "key": "workers-journeypersons", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-journeypersons2",
+        "name": "Carton Of Choc Milk",
+        "description": "What better way to wash down smoko than a choc milk?",
+        "effect": "Journeypersons produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 9e4,
+        "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
+        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-journeypersons3",
+        "name": "Packet Of Durries",
+        "description": "Can't have smoko without smokes.",
+        "effect": "Journeypersons produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 3e5,
+        "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
+        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-workers-masters1",
+        "name": "New Company Hilux",
+        "description": "Treat your masters to a new company car that'll go anywhere, do anything, but also not be taken down to the skids like the apprentices would.",
+        "effect": "Journeypersons produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 4e6,
+        "targets": [{ "key": "workers-masters", "property": "rate" }],
+        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-masters2",
+        "name": "Knock Off Rolex For Service",
+        "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
+        "effect": "Journeypersons produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 4e6,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
         "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
         "factor": 2
