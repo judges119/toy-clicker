@@ -96,19 +96,19 @@
         "key": "upgrade-workers-masters2",
         "name": "Knock Off Rolex For Service",
         "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
-        "effect": "Journeypersons produce twice as much per second.",
+        "effect": "Masters produce twice as much per second.",
         "icon": "fa-group",
         "cost": 9e6,
         "targets": [{ "key": "workers-masters", "property": "rate" }],
-        "requirements": [{ "key": "workers-masters1", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-masters1", "property": "used", "threshold": 1 }],
         "factor": 2
     },
 
     {
-        "key": "upgrade-workers-workers",
-        "name": "Knock Off Rolex For Service",
-        "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
-        "effect": "Journeypersons produce twice as much per second.",
+        "key": "upgrade-workers-workers1",
+        "name": "8/8/8 Work/Rest/Play",
+        "description": "Everyone deserves time to rest, and time to be with family, friends, and themselves.",
+        "effect": "Workers produce twice as much per second.",
         "icon": "fa-group",
         "cost": 9e6,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
@@ -116,14 +116,25 @@
         "factor": 2
     },
     {
-        "key": "upgrade-workers-workers",
-        "name": "Knock Off Rolex For Service",
-        "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
-        "effect": "Journeypersons produce twice as much per second.",
+        "key": "upgrade-workers-workers2",
+        "name": "10 Days Of Sick Leave",
+        "description": "What use are people if they're sick and infecting staff? Pay them to stay home and they'll reward you by being more productive.",
+        "effect": "Workers produce twice as much per second.",
         "icon": "fa-group",
         "cost": 9e6,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
-        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-workers1", "property": "used", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-workers3",
+        "name": "4 Weeks Of Annual Leave",
+        "description": "Pay people to recuperate and they'll come back ready to work twice as hard.",
+        "effect": "Workers produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 9e6,
+        "targets": [{ "key": "workers-workers", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-workers-workers2", "property": "used", "threshold": 5 }],
         "factor": 2
     }
 ]
