@@ -72,7 +72,7 @@
       "housed": "buildings-university",
       "cost_increase": 1.5,
       "state": {
-        "cost": 2e3,
+        "cost": 1e7,
         "rate": 5e0
       }
     },

@@ -58,9 +58,9 @@
       "cost_increase": 1.4,
       "info": "html/self-cleaning.html",
       "state": {
-        "clicks": 2e1,
+        "clicks": 5e6,
         "priceIncrease": 1e3,
-        "cost": 5e1,
+        "cost": 3e6,
         "info_levels": [ 1 ]
       }
     },
@@ -73,7 +73,7 @@
       "state": {
         "clicks": 2e6,
         "priceIncrease": 5.4e3,
-        "cost": 3e6,
+        "cost": 6e7,
         "info_levels": [ 1, 5 ]
       }
     }
