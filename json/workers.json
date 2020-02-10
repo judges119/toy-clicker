@@ -15,10 +15,10 @@
       "name": "Journeypersons",
       "description": "Qualified workers who know what they're building but need their smoko breaks.",
       "housed": "buildings-tradeshall",
-      "cost_increase": 1.5,
+      "cost_increase": 1.45,
       "state": {
-        "cost": 4e2,
-        "rate": 3e0
+        "cost": 6e2,
+        "rate": 8e0
       }
     },
     {
@@ -26,10 +26,10 @@
       "name": "Masters",
       "description": "Artisans at the craft, they make perfect things surrounded by finished durries.",
       "housed": "buildings-tradeshall",
-      "cost_increase": 1.5,
+      "cost_increase": 1.4,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 7.5e3,
+        "rate": 2.5e1
       }
     },
     {
@@ -37,10 +37,10 @@
       "name": "Workers",
       "description": "Operate standard machinery all dayday producing a large quantity of high-quality sex toys",
       "housed": "buildings-factory",
-      "cost_increase": 1.5,
+      "cost_increase": 1.35,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 8e4,
+        "rate": 1e2
       }
     },
     {
@@ -48,10 +48,10 @@
       "name": "Robots",
       "description": "Similar to workers. Apparently they don't take breaks but they also tend to break a lot.",
       "housed": "buildings-factory",
-      "cost_increase": 1.5,
+      "cost_increase": 1.3,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 7e5,
+        "rate": 9e3
       }
     },
     {
@@ -59,10 +59,10 @@
       "name": "Cyborgs",
       "description": "Humans and robots bow before these half-person, half-machine creations that pump out loads of toys for well... pumping one out.",
       "housed": "buildings-factory",
-      "cost_increase": 1.5,
+      "cost_increase": 1.25,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 5e6,
+        "rate": 1.2e5
       }
     },
     {
@@ -78,24 +78,24 @@
     },
     {
       "key": "workers-phd-candidates",
-      "name": "Masters",
+      "name": "PhD Candidates",
       "description": "Focusing on breaking new ground, these students will hopefully develop new theoretical sex toys.",
       "housed": "buildings-university",
-      "cost_increase": 1.5,
+      "cost_increase": 1.2,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 3e7,
+        "rate": 1.5e6
       }
     },
     {
       "key": "workers-postdocs",
-      "name": "Masters",
+      "name": "Postdoctoral Researchers",
       "description": "Experienced and hungry for research grants (and cheap food), these students will do anything.",
       "housed": "buildings-university",
-      "cost_increase": 1.5,
+      "cost_increase": 1.15,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 1.25e8,
+        "rate": 2e7
       }
     },
     {
@@ -103,10 +103,10 @@
       "name": "Tenured Professors",
       "description": "They cost a lot but will also develop the latest and greatest toys and staff problems.",
       "housed": "buildings-university",
-      "cost_increase": 1.5,
+      "cost_increase": 1.1,
       "state": {
-        "cost": 2e3,
-        "rate": 5e0
+        "cost": 3e9,
+        "rate": 2e8
       }
     }
   ]
