@@ -240,6 +240,54 @@
     "threshold": 100
   },
   {
+    "description": "The first Apprentice hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-apprentices-1",
+    "threshold": 1,
+    "targetKey": "workers-apprentices",
+    "targetProperty": "hired"
+  },
+  {
+    "description": "The first Journeypersons hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-journeypersons-1",
+    "threshold": 1,
+    "targetKey": "workers-journeypersons",
+    "targetProperty": "hired"
+  },
+  {
+    "description": "The first Master hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-masters-1",
+    "threshold": 1,
+    "targetKey": "workers-masters",
+    "targetProperty": "hired"
+  },
+  {
+    "description": "The first Worker hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-workers-1",
+    "threshold": 1,
+    "targetKey": "workers-workers",
+    "targetProperty": "hired"
+  },
+  {
+    "description": "The first robot hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-robots-1",
+    "threshold": 1,
+    "targetKey": "workers-robots",
+    "targetProperty": "hired"
+  },
+  {
+    "description": "The first cyborg hired!",
+    "icon": "fa-user",
+    "key": "achievement-workers-cyborgs-1",
+    "threshold": 1,
+    "targetKey": "workers-cyborgs",
+    "targetProperty": "hired"
+  },
+  {
     "description": "The first Master Students hired!",
     "icon": "fa-user",
     "key": "achievement-workers-masterstudents-1",
@@ -264,22 +312,6 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Research Fellows hired!",
-    "icon": "fa-user",
-    "key": "achievement-workers-fellows-1",
-    "threshold": 1,
-    "targetKey": "workers-fellows",
-    "targetProperty": "hired"
-  },
-  {
-    "description": "The first Permanent Staff hired!",
-    "icon": "fa-user",
-    "key": "achievement-workers-permanent-1",
-    "threshold": 1,
-    "targetKey": "workers-permanent",
-    "targetProperty": "hired"
-  },
-  {
     "description": "The first Tenured Professors hired!",
     "icon": "fa-user",
     "key": "achievement-workers-profs-1",
@@ -288,20 +320,196 @@
     "targetProperty": "hired"
   },
   {
-    "description": "The first Nobel Laureates hired!",
-    "icon": "fa-user",
-    "key": "achievement-workers-nobel-1",
-    "threshold": 1,
-    "targetKey": "workers-nobel",
-    "targetProperty": "hired"
+    "description": "5 Apprentices working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-apprentices-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-apprentices",
+    "threshold": 5
   },
   {
-    "description": "The first Summer Students hired!",
-    "icon": "fa-user",
-    "key": "achievement-workers-summies-1",
-    "threshold": 1,
-    "targetKey": "workers-summies",
-    "targetProperty": "hired"
+    "description": "25 Apprentices working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-apprentices-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-apprentices",
+    "threshold": 25
+  },
+  {
+    "description": "50 Apprentices working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-apprentices-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-apprentices",
+    "threshold": 50
+  },
+  {
+    "description": "100 Apprentices working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-apprentices-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-apprentices",
+    "threshold": 100
+  },
+  {
+    "description": "5 Journeypersons working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-journeypersons-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-journeypersons",
+    "threshold": 5
+  },
+  {
+    "description": "25 Journeypersons working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-journeypersons-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-journeypersons",
+    "threshold": 25
+  },
+  {
+    "description": "50 Journeypersons working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-journeypersons-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-journeypersons",
+    "threshold": 50
+  },
+  {
+    "description": "100 Journeypersons working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-journeypersons-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-journeypersons",
+    "threshold": 100
+  },
+  {
+    "description": "5 Masters working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-masters-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-masters",
+    "threshold": 5
+  },
+  {
+    "description": "25 Masters working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-masters-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-masters",
+    "threshold": 25
+  },
+  {
+    "description": "50 Masters working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-masters-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-masters",
+    "threshold": 50
+  },
+  {
+    "description": "100 Masters working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-masters-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-masters",
+    "threshold": 100
+  },
+  {
+    "description": "5 Workers working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-workers-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-workers",
+    "threshold": 5
+  },
+  {
+    "description": "25 Workers working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-workers-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-workers",
+    "threshold": 25
+  },
+  {
+    "description": "50 Workers working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-workers-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-workers",
+    "threshold": 50
+  },
+  {
+    "description": "100 Workers working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-workers-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-workers",
+    "threshold": 100
+  },
+  {
+    "description": "5 robots working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-robots-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-robots",
+    "threshold": 5
+  },
+  {
+    "description": "25 robots working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-robots-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-robots",
+    "threshold": 25
+  },
+  {
+    "description": "50 robots working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-robots-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-robots",
+    "threshold": 50
+  },
+  {
+    "description": "100 robots working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-robots-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-robots",
+    "threshold": 100
+  },
+  {
+    "description": "5 cyborgs working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-cyborgs-5",
+    "targetProperty": "hired",
+    "targetKey": "workers-cyborgs",
+    "threshold": 5
+  },
+  {
+    "description": "25 cyborgs working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-cyborgs-25",
+    "targetProperty": "hired",
+    "targetKey": "workers-cyborgs",
+    "threshold": 25
+  },
+  {
+    "description": "50 cyborgs working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-cyborgs-50",
+    "targetProperty": "hired",
+    "targetKey": "workers-cyborgs",
+    "threshold": 50
+  },
+  {
+    "description": "100 cyborgs working for you!",
+    "icon": "fa-users",
+    "key": "achievement-workers-cyborgs-100",
+    "targetProperty": "hired",
+    "targetKey": "workers-cyborgs",
+    "threshold": 100
   },
   {
     "description": "5 Master Students working for you!",
@@ -400,70 +608,6 @@
     "threshold": 100
   },
   {
-    "description": "5 Research Fellows working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-fellows-5",
-    "targetProperty": "hired",
-    "targetKey": "workers-fellows",
-    "threshold": 5
-  },
-  {
-    "description": "25 Research Fellows working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-fellows-25",
-    "targetProperty": "hired",
-    "targetKey": "workers-fellows",
-    "threshold": 25
-  },
-  {
-    "description": "50 Research Fellows working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-fellows-50",
-    "targetProperty": "hired",
-    "targetKey": "workers-fellows",
-    "threshold": 50
-  },
-  {
-    "description": "100 Research Fellows working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-fellows-100",
-    "targetProperty": "hired",
-    "targetKey": "workers-fellows",
-    "threshold": 100
-  },
-  {
-    "description": "5 Permanent Staff working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-permanent-5",
-    "targetProperty": "hired",
-    "targetKey": "workers-permanent",
-    "threshold": 5
-  },
-  {
-    "description": "25 Permanent Staff working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-permanent-25",
-    "targetProperty": "hired",
-    "targetKey": "workers-permanent",
-    "threshold": 25
-  },
-  {
-    "description": "50 Permanent Staff working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-permanent-50",
-    "targetProperty": "hired",
-    "targetKey": "workers-permanent",
-    "threshold": 50
-  },
-  {
-    "description": "100 Permanent Staff working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-permanent-100",
-    "targetProperty": "hired",
-    "targetKey": "workers-permanent",
-    "threshold": 100
-  },
-  {
     "description": "5 Tenured Professors working for you!",
     "icon": "fa-users",
     "key": "achievement-workers-profs-5",
@@ -493,70 +637,6 @@
     "key": "achievement-workers-profs-100",
     "targetProperty": "hired",
     "targetKey": "workers-profs",
-    "threshold": 100
-  },
-  {
-    "description": "5 Nobel Laureates working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-nobel-5",
-    "targetProperty": "hired",
-    "targetKey": "workers-nobel",
-    "threshold": 5
-  },
-  {
-    "description": "25 Nobel Laureates working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-nobel-25",
-    "targetProperty": "hired",
-    "targetKey": "workers-nobel",
-    "threshold": 25
-  },
-  {
-    "description": "50 Nobel Laureates working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-nobel-50",
-    "targetProperty": "hired",
-    "targetKey": "workers-nobel",
-    "threshold": 50
-  },
-  {
-    "description": "100 Nobel Laureates working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-nobel-100",
-    "targetProperty": "hired",
-    "targetKey": "workers-nobel",
-    "threshold": 100
-  },
-  {
-    "description": "5 Summer Students working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-5",
-    "targetProperty": "hired",
-    "targetKey": "workers-summies",
-    "threshold": 5
-  },
-  {
-    "description": "25 Summer Students working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-25",
-    "targetProperty": "hired",
-    "targetKey": "workers-summies",
-    "threshold": 25
-  },
-  {
-    "description": "50 Summer Students working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-50",
-    "targetProperty": "hired",
-    "targetKey": "workers-summies",
-    "threshold": 50
-  },
-  {
-    "description": "100 Summer Students working for you!",
-    "icon": "fa-users",
-    "key": "achievement-workers-summies-100",
-    "targetProperty": "hired",
-    "targetKey": "workers-summies",
     "threshold": 100
   },
   {
