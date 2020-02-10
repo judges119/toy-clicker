@@ -146,7 +146,10 @@
         "icon": "fa-group",
         "cost": 1e6,
         "targets": [{ "key": "workers-robots", "property": "rate" }],
-        "requirements": [{ "key": "workers-workers", "property": "hired", "threshold": 5 }],
+        "requirements": [
+            { "key": "workers-workers", "property": "hired", "threshold": 5 },
+            { "key": "workers-robots", "property": "hired", "threshold": 5 }
+        ],
         "factor": 2
     },
     {
@@ -181,6 +184,29 @@
         "cost": 5e7,
         "targets": [{ "key": "workers-cyborgs", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-cyborgs1", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-workers-masters-students1",
+        "name": "Kinderzimmer",
+        "description": "A shared room for all your Master students. Used to be a server room.",
+        "effect": "Master Students produce +2 data per second.",
+        "icon": "fa-group",
+        "cost": 2e7,
+        "targets": [{ "key": "workers-masters-students", "property": "rate" }],
+        "requirements": [{ "key": "workers-masters-students", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-masters-students2",
+        "name": "Own desk",
+        "description": "Not having to share one is a blessing.",
+        "effect": "Master Students produce twice as much data per second.",
+        "icon": "fa-group",
+        "cost": 1e8,
+        "targets": [{ "key": "workers-masters-students", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-workers-masters-students1", "property": "used", "threshold": 1 }],
         "factor": 2
     }
 ]
