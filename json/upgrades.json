@@ -123,7 +123,7 @@
         "icon": "fa-group",
         "cost": 9e6,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
-        "requirements": [{ "key": "upgrade-workers-workers1", "property": "used", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-workers1", "property": "used", "threshold": 1 }],
         "factor": 2
     },
     {
@@ -134,7 +134,30 @@
         "icon": "fa-group",
         "cost": 9e6,
         "targets": [{ "key": "workers-workers", "property": "rate" }],
-        "requirements": [{ "key": "upgrade-workers-workers2", "property": "used", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-workers2", "property": "used", "threshold": 1 }],
+        "factor": 2
+    },
+
+    {
+        "key": "upgrade-workers-robots1",
+        "name": "Extra Oil",
+        "description": "A bit of extra oil helps keep them lubricated, much like good use of sex toys.",
+        "effect": "Robots produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 9e6,
+        "targets": [{ "key": "workers-robots", "property": "rate" }],
+        "requirements": [{ "key": "workers-workers", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-workers-robots2",
+        "name": "Regular Servicing",
+        "description": "Robots break often so a bit of TLC should help. You should also occasionally get yourself checked up too, even if you think you're okay.",
+        "effect": "Robots produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 9e6,
+        "targets": [{ "key": "workers-robots", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-workers-robots1", "property": "used", "threshold": 1 }],
         "factor": 2
     }
 ]
