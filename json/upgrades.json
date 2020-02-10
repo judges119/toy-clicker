@@ -1,1 +1,60 @@
-[]
+[
+    {
+        "key": "upgrade-workers-apprentices1",
+        "name": "3L Of Elbow Grease",
+        "description": "You tell the apprentice to go buy some elbow grease and they bloody come back with some.",
+        "effect": "Apprentices produce +$2 per second.",
+        "icon": "fa-group",
+        "cost": 4e2,
+        "targets": [{ "key": "workers-apprentices", "property": "rate" }],
+        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "constant": 2
+    },
+    {
+        "key": "upgrade-workers-apprentices2",
+        "name": "Tartan Paint",
+        "description": "As a joke you tell the apprentice to get some tartan paint for new sex toy colours and somehow they bought some.",
+        "effect": "Apprentices produce +$2 per second.",
+        "icon": "fa-group",
+        "cost": 1e3,
+        "targets": [{ "key": "workers-apprentices", "property": "rate" }],
+        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "constant": 2
+    },
+    {
+        "key": "upgrade-workers-apprentices3",
+        "name": "Left-handed Screwdriver",
+        "description": "Some of the new sex toys have tricky fitting and you tell the apprentice to get you a left handed screwdriver.",
+        "effect": "Apprentices produce +$2 per second.",
+        "icon": "fa-group",
+        "cost": 7e3,
+        "targets": [{ "key": "workers-apprentices", "property": "rate" }],
+        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "constant": 2
+    },
+    {
+        "key": "upgrade-workers-apprentices4",
+        "name": "Bucket Of Electricity",
+        "description": "One of the fancy models need some electricity, maybe now we can stump the apprentice... Or not it seems as you feel your hair stand on end as they return.",
+        "effect": "Apprentices produce +$2 per second.",
+        "icon": "fa-group",
+        "cost": 1e4,
+        "targets": [{ "key": "workers-apprentices", "property": "rate" }],
+        "requirements": [{ "key": "workers-apprentices", "property": "hired", "threshold": 5 }],
+        "constant": 2
+    }
+
+    ,
+    {
+        "key": "upgrade-workers-journeypersons1",
+        "name": "Sausage Roll",
+        "description": "Your crafts people need a mid-morning snack. Sauce better not be bloody extra.",
+        "effect": "Journeypersons produce twice as much per second.",
+        "icon": "fa-group",
+        "cost": 4e4,
+        "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
+        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "factor": 2
+    }
+    
+]
