@@ -217,8 +217,8 @@
         "effect": "PhD Students produce twice as much per second.",
         "icon": "fa-group",
         "cost": 5e8,
-        "targets": [{ "key": "workers-phdstudents", "property": "rate" }],
-        "requirements": [{ "key": "workers-phdstudents", "property": "hired", "threshold": 5 }],
+        "targets": [{ "key": "workers-phd-candidates", "property": "rate" }],
+        "requirements": [{ "key": "workers-phd-candidates", "property": "hired", "threshold": 5 }],
         "constant": 16
     },
     {
@@ -228,8 +228,8 @@
         "effect": "PhD Students produce twice as much data per second.",
         "icon": "fa-group",
         "cost": 1e9,
-        "targets": [{ "key": "workers-phdstudents", "property": "rate" }],
-        "requirements": [{ "key": "upgrade-phdstudents1", "property": "used", "threshold": 1 }],
+        "targets": [{ "key": "workers-phd-candidates", "property": "rate" }],
+        "requirements": [{ "key": "upgrade-phd-candidates1", "property": "used", "threshold": 1 }],
         "factor": 2
     },
 
@@ -277,5 +277,72 @@
         "targets": [{ "key": "workers-tenured", "property": "rate" }],
         "requirements": [{ "key": "upgrade-tenured1", "property": "used", "threshold": 1 }],
         "factor": 2
+    },
+
+    {
+        "key": "upgrade-coffee",
+        "name": "Free coffee",
+        "description": "Addictively delicious. Also free.",
+        "effect": "All workers produce twice as much per second.",
+        "icon": "fa-coffee",
+        "cost": 8e10,
+        "targets": [
+            { "key": "workers-apprentices", "property": "rate" },
+            { "key": "workers-journeypersons", "property": "rate" },
+            { "key": "workers-masters", "property": "rate" },
+            { "key": "workers-workers", "property": "rate" },
+            { "key": "workers-robots", "property": "rate" },
+            { "key": "workers-cyborgs", "property": "rate" },
+            { "key": "workers-masters-students", "property": "rate" },
+            { "key": "workers-phds-candidates", "property": "rate" },
+            { "key": "workers-postdocs", "property": "rate" },
+            { "key": "workers-tenured", "property": "rate" }
+        ],
+        "requirements": [
+            { "key": "workers-apprentices", "property": "hired", "threshold": 1 },
+            { "key": "workers-journeypersons", "property": "hired", "threshold": 1 },
+            { "key": "workers-masters", "property": "hired", "threshold": 1 },
+            { "key": "workers-workers", "property": "hired", "threshold": 1 },
+            { "key": "workers-robots", "property": "hired", "threshold": 1 },
+            { "key": "workers-cyborgs", "property": "hired", "threshold": 1 },
+            { "key": "workers-masters-students", "property": "hired", "threshold": 1 },
+            { "key": "workers-phd-candidates", "property": "hired", "threshold": 1 },
+            { "key": "workers-postdocs", "property": "hired", "threshold": 1 },
+            { "key": "workers-tenured", "property": "hired", "threshold": 1 }
+        ],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-union",
+        "name": "Unionisation",
+        "description": "The university staff keep thinking we're talking about destroying ionised bonds but with this, everyone benefits.",
+        "effect": "All workers produce thrice as much per second.",
+        "icon": "fa-coffee",
+        "cost": 5e14,
+        "targets": [
+            { "key": "workers-apprentices", "property": "rate" },
+            { "key": "workers-journeypersons", "property": "rate" },
+            { "key": "workers-masters", "property": "rate" },
+            { "key": "workers-workers", "property": "rate" },
+            { "key": "workers-robots", "property": "rate" },
+            { "key": "workers-cyborgs", "property": "rate" },
+            { "key": "workers-masters-students", "property": "rate" },
+            { "key": "workers-phds-candidates", "property": "rate" },
+            { "key": "workers-postdocs", "property": "rate" },
+            { "key": "workers-tenured", "property": "rate" }
+        ],
+        "requirements": [
+            { "key": "workers-apprentices", "property": "hired", "threshold": 1 },
+            { "key": "workers-journeypersons", "property": "hired", "threshold": 1 },
+            { "key": "workers-masters", "property": "hired", "threshold": 1 },
+            { "key": "workers-workers", "property": "hired", "threshold": 1 },
+            { "key": "workers-robots", "property": "hired", "threshold": 1 },
+            { "key": "workers-cyborgs", "property": "hired", "threshold": 1 },
+            { "key": "workers-masters-students", "property": "hired", "threshold": 1 },
+            { "key": "workers-phd-candidates", "property": "hired", "threshold": 1 },
+            { "key": "workers-postdocs", "property": "hired", "threshold": 1 },
+            { "key": "workers-tenured", "property": "hired", "threshold": 1 }
+        ],
+        "factor": 3
     }
 ]
