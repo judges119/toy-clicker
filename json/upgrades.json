@@ -344,5 +344,50 @@
             { "key": "workers-tenured", "property": "hired", "threshold": 1 }
         ],
         "factor": 3
+    },
+
+    {
+        "key": "upgrade-energy1",
+        "name": "Better Tools",
+        "description": "Using proceeds to buy better tools",
+        "effect": "Double the amount of money per click.",
+        "icon": "fa-bolt",
+        "cost": 2e4,
+        "targets": [{ "key": "lab", "property": "singlePrice" }],
+        "requirements": [],
+        "factor": 2
+    },
+    {
+        "key": "upgrade-energy2",
+        "name": "Better Workbench",
+        "description": "Using proceeds to buy a better workbench that incidentally looks the same as this one.",
+        "effect": "Quadruple the amount of money per click.",
+        "icon": "fa-bolt",
+        "cost": 2e6,
+        "targets": [{ "key": "lab", "property": "singlePrice" }],
+        "requirements": [{ "key": "upgrade-energy1", "property": "used", "threshold": 1 }],
+        "factor": 4
+    },
+    {
+        "key": "upgrade-energy3",
+        "name": "Better Office",
+        "description": "Your workbench is now a corner office overlooking a park.",
+        "effect": "Ten times the amount of money per click.",
+        "icon": "fa-bolt",
+        "cost": 4e8,
+        "targets": [{ "key": "lab", "property": "singlePrice" }],
+        "requirements": [{ "key": "upgrade-energy2", "property": "used", "threshold": 1 }],
+        "factor": 10
+    },
+    {
+        "key": "upgrade-energy4",
+        "name": "Best Office",
+        "description": "Your workbench is now a corner office overlooking the city.",
+        "effect": "25 times the amount of money per click.",
+        "icon": "fa-bolt",
+        "cost": 4e8,
+        "targets": [{ "key": "lab", "property": "singlePrice" }],
+        "requirements": [{ "key": "upgrade-energy3", "property": "used", "threshold": 1 }],
+        "factor": 25
     }
 ]
