@@ -105,12 +105,7 @@
         </div>
         <button id="detector-info" class="btn btn-info" ng-click="lc.showDetectorInfo()"><i class="fa fa-info"></i></button>
         <div class="row status" ng-cloak>
-          <div class="col-xs-6 text-center col-no-padding-xs">
-            <strong>Research</strong><br>
-            {{ lc.lab.state.clicks | niceNumber }}
-            <div class="update-value" id="update-data"></div>
-          </div>
-          <div class="col-xs-6 text-center col-no-padding-xs">
+          <div class="col-xs-12 text-center col-no-padding-xs">
             <strong>Balance</strong><br>
             {{ lc.lab.state.money | currency }}
             <div class="update-value" id="update-funding"></div>

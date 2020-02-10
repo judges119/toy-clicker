@@ -95,7 +95,7 @@ var GameObjects = (function() {
       return false;
     }
     return this.state.level > 0 ||
-           workshop.state.clicks >= this.state.clicks;
+           workshop.state.money >= this.state.cost;
   };
 
   Research.prototype.isAvailable = function(workshop) {
