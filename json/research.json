@@ -17,12 +17,12 @@
       "name": "Materials",
       "description": "Using better and varied materials.",
       "cost_increase": 1.7,
-      "info": "html/CPV.html",
+      "info": "html/materials.html",
       "state": {
         "clicks": 2e2,
         "priceIncrease": 6e0,
         "cost": 4e2,
-        "info_levels": [ 1, 5, 10, 15, 20 ]
+        "info_levels": [ 1, 5 ]
       }
     },
     {
