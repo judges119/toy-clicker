@@ -1,442 +1,242 @@
 [
   {
-    "description": "CP violation discovery!",
+    "description": "Vibration discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-cpv-1",
+    "key": "achievement-research-vibration-1",
     "threshold": 1,
-    "targetKey": "research-cpv",
+    "targetKey": "research-vibration",
     "targetProperty": "level"
   },
   {
-    "description": "J/\u03c8 discovery!",
+    "description": "Materials discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-1",
+    "key": "achievement-research-materials-1",
     "threshold": 1,
-    "targetKey": "research-jpsi",
+    "targetKey": "research-materials",
     "targetProperty": "level"
   },
   {
-    "description": "\u03c4 lepton discovery!",
+    "description": "Waterproofing discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-1",
+    "key": "achievement-research-waterproofing-1",
     "threshold": 1,
-    "targetKey": "research-tau",
+    "targetKey": "research-waterproofing",
     "targetProperty": "level"
   },
   {
-    "description": "Beauty quark discovery!",
+    "description": "Internet-of-Things discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-beauty-1",
+    "key": "achievement-research-iot-1",
     "threshold": 1,
-    "targetKey": "research-beauty",
+    "targetKey": "research-iot",
     "targetProperty": "level"
   },
   {
-    "description": "Gluons discovery!",
+    "description": "Self-cleaning discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-gluons-1",
+    "key": "achievement-research-self-cleaning-1",
     "threshold": 1,
-    "targetKey": "research-gluons",
+    "targetKey": "research-self-cleaning",
     "targetProperty": "level"
   },
   {
-    "description": "W and Z boson discovery!",
+    "description": "VR discovery!",
     "icon": "fa-cogs",
-    "key": "achievement-research-weak-1",
+    "key": "achievement-research-vr-1",
     "threshold": 1,
-    "targetKey": "research-weak",
+    "targetKey": "research-vr",
     "targetProperty": "level"
   },
   {
-    "description": "Top quark discovery!",
+    "description": "Vibration research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-top-1",
-    "threshold": 1,
-    "targetKey": "research-top",
-    "targetProperty": "level"
-  },
-  {
-    "description": "B oscillation discovery!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-boscillations-1",
-    "threshold": 1,
-    "targetKey": "research-boscillations",
-    "targetProperty": "level"
-  },
-  {
-    "description": "Higgs boson discovery!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-higgs-1",
-    "threshold": 1,
-    "targetKey": "research-higgs",
-    "targetProperty": "level"
-  },
-  {
-    "description": "D*s\u207b discovery!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-dstars-1",
-    "threshold": 1,
-    "targetKey": "research-dstars",
-    "targetProperty": "level"
-  },
-  {
-    "description": "\u039eb'- and \u039eb*- discovery!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-xib-1",
-    "threshold": 1,
-    "targetKey": "research-xib",
-    "targetProperty": "level"
-  },
-  {
-    "description": "CP violation research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-cpv-5",
+    "key": "achievement-research-vibration-5",
     "targetProperty": "level",
-    "targetKey": "research-cpv",
+    "targetKey": "research-vibration",
     "threshold": 5
   },
   {
-    "description": "CP violation research level 25!",
+    "description": "Vibration research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-cpv-25",
+    "key": "achievement-research-vibration-25",
     "targetProperty": "level",
-    "targetKey": "research-cpv",
+    "targetKey": "research-vibration",
     "threshold": 25
   },
   {
-    "description": "CP violation research level 50!",
+    "description": "Vibration research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-cpv-50",
+    "key": "achievement-research-vibration-50",
     "targetProperty": "level",
-    "targetKey": "research-cpv",
+    "targetKey": "research-vibration",
     "threshold": 50
   },
   {
-    "description": "CP violation research level 100!",
+    "description": "Vibration research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-cpv-100",
+    "key": "achievement-research-vibration-100",
     "targetProperty": "level",
-    "targetKey": "research-cpv",
+    "targetKey": "research-vibration",
     "threshold": 100
   },
   {
-    "description": "J/\u03c8 research level 5!",
+    "description": "Materials research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-5",
+    "key": "achievement-research-materials-5",
     "targetProperty": "level",
-    "targetKey": "research-jpsi",
+    "targetKey": "research-materials",
     "threshold": 5
   },
   {
-    "description": "J/\u03c8 research level 25!",
+    "description": "Materials research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-25",
+    "key": "achievement-research-materials-25",
     "targetProperty": "level",
-    "targetKey": "research-jpsi",
+    "targetKey": "research-materials",
     "threshold": 25
   },
   {
-    "description": "J/\u03c8 research level 50!",
+    "description": "Materials research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-50",
+    "key": "achievement-research-materials-50",
     "targetProperty": "level",
-    "targetKey": "research-jpsi",
+    "targetKey": "research-materials",
     "threshold": 50
   },
   {
-    "description": "J/\u03c8 research level 100!",
+    "description": "Materials research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-jpsi-100",
+    "key": "achievement-research-materials-100",
     "targetProperty": "level",
-    "targetKey": "research-jpsi",
+    "targetKey": "research-materials",
     "threshold": 100
   },
   {
-    "description": "\u03c4 lepton research level 5!",
+    "description": "Waterproofing research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-5",
+    "key": "achievement-research-waterproofing-5",
     "targetProperty": "level",
-    "targetKey": "research-tau",
+    "targetKey": "research-waterproofing",
     "threshold": 5
   },
   {
-    "description": "\u03c4 lepton research level 25!",
+    "description": "Waterproofing research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-25",
+    "key": "achievement-research-waterproofing-25",
     "targetProperty": "level",
-    "targetKey": "research-tau",
+    "targetKey": "research-waterproofing",
     "threshold": 25
   },
   {
-    "description": "\u03c4 lepton research level 50!",
+    "description": "Waterproofing research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-50",
+    "key": "achievement-research-waterproofing-50",
     "targetProperty": "level",
-    "targetKey": "research-tau",
+    "targetKey": "research-waterproofing",
     "threshold": 50
   },
   {
-    "description": "\u03c4 lepton research level 100!",
+    "description": "Waterproofing research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-tau-100",
+    "key": "achievement-research-waterproofing-100",
     "targetProperty": "level",
-    "targetKey": "research-tau",
+    "targetKey": "research-waterproofing",
     "threshold": 100
   },
   {
-    "description": "Beauty quark research level 5!",
+    "description": "Internet-of-Things research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-beauty-5",
+    "key": "achievement-research-iot-5",
     "targetProperty": "level",
-    "targetKey": "research-beauty",
+    "targetKey": "research-iot",
     "threshold": 5
   },
   {
-    "description": "Beauty quark research level 25!",
+    "description": "Internet-of-Things research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-beauty-25",
+    "key": "achievement-research-iot-25",
     "targetProperty": "level",
-    "targetKey": "research-beauty",
+    "targetKey": "research-iot",
     "threshold": 25
   },
   {
-    "description": "Beauty quark research level 50!",
+    "description": "Internet-of-Things research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-beauty-50",
+    "key": "achievement-research-iot-50",
     "targetProperty": "level",
-    "targetKey": "research-beauty",
+    "targetKey": "research-iot",
     "threshold": 50
   },
   {
-    "description": "Beauty quark research level 100!",
+    "description": "Internet-of-Things research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-beauty-100",
+    "key": "achievement-research-iot-100",
     "targetProperty": "level",
-    "targetKey": "research-beauty",
+    "targetKey": "research-iot",
     "threshold": 100
   },
   {
-    "description": "Gluons research level 5!",
+    "description": "Self-cleaning research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-gluons-5",
+    "key": "achievement-research-self-cleaning-5",
     "targetProperty": "level",
-    "targetKey": "research-gluons",
+    "targetKey": "research-self-cleaning",
     "threshold": 5
   },
   {
-    "description": "Gluons research level 25!",
+    "description": "Self-cleaning research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-gluons-25",
+    "key": "achievement-research-self-cleaning-25",
     "targetProperty": "level",
-    "targetKey": "research-gluons",
+    "targetKey": "research-self-cleaning",
     "threshold": 25
   },
   {
-    "description": "Gluons research level 50!",
+    "description": "Self-cleaning research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-gluons-50",
+    "key": "achievement-research-self-cleaning-50",
     "targetProperty": "level",
-    "targetKey": "research-gluons",
+    "targetKey": "research-self-cleaning",
     "threshold": 50
   },
   {
-    "description": "Gluons research level 100!",
+    "description": "Self-cleaning research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-gluons-100",
+    "key": "achievement-research-self-cleaning-100",
     "targetProperty": "level",
-    "targetKey": "research-gluons",
+    "targetKey": "research-self-cleaning",
     "threshold": 100
   },
   {
-    "description": "W and Z boson research level 5!",
+    "description": "VR research level 5!",
     "icon": "fa-cogs",
-    "key": "achievement-research-weak-5",
+    "key": "achievement-research-vr-5",
     "targetProperty": "level",
-    "targetKey": "research-weak",
+    "targetKey": "research-vr",
     "threshold": 5
   },
   {
-    "description": "W and Z boson research level 25!",
+    "description": "VR research level 25!",
     "icon": "fa-cogs",
-    "key": "achievement-research-weak-25",
+    "key": "achievement-research-vr-25",
     "targetProperty": "level",
-    "targetKey": "research-weak",
+    "targetKey": "research-vr",
     "threshold": 25
   },
   {
-    "description": "W and Z boson research level 50!",
+    "description": "VR research level 50!",
     "icon": "fa-cogs",
-    "key": "achievement-research-weak-50",
+    "key": "achievement-research-vr-50",
     "targetProperty": "level",
-    "targetKey": "research-weak",
+    "targetKey": "research-vr",
     "threshold": 50
   },
   {
-    "description": "W and Z boson research level 100!",
+    "description": "VR research level 100!",
     "icon": "fa-cogs",
-    "key": "achievement-research-weak-100",
+    "key": "achievement-research-vr-100",
     "targetProperty": "level",
-    "targetKey": "research-weak",
-    "threshold": 100
-  },
-  {
-    "description": "Top quark research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-top-5",
-    "targetProperty": "level",
-    "targetKey": "research-top",
-    "threshold": 5
-  },
-  {
-    "description": "Top quark research level 25!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-top-25",
-    "targetProperty": "level",
-    "targetKey": "research-top",
-    "threshold": 25
-  },
-  {
-    "description": "Top quark research level 50!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-top-50",
-    "targetProperty": "level",
-    "targetKey": "research-top",
-    "threshold": 50
-  },
-  {
-    "description": "Top quark research level 100!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-top-100",
-    "targetProperty": "level",
-    "targetKey": "research-top",
-    "threshold": 100
-  },
-  {
-    "description": "B oscillation research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-boscillations-5",
-    "targetProperty": "level",
-    "targetKey": "research-boscillations",
-    "threshold": 5
-  },
-  {
-    "description": "B oscillation research level 25!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-boscillations-25",
-    "targetProperty": "level",
-    "targetKey": "research-boscillations",
-    "threshold": 25
-  },
-  {
-    "description": "B oscillation research level 50!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-boscillations-50",
-    "targetProperty": "level",
-    "targetKey": "research-boscillations",
-    "threshold": 50
-  },
-  {
-    "description": "B oscillation research level 100!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-boscillations-100",
-    "targetProperty": "level",
-    "targetKey": "research-boscillations",
-    "threshold": 100
-  },
-  {
-    "description": "Higgs boson research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-higgs-5",
-    "targetProperty": "level",
-    "targetKey": "research-higgs",
-    "threshold": 5
-  },
-  {
-    "description": "Higgs boson research level 25!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-higgs-25",
-    "targetProperty": "level",
-    "targetKey": "research-higgs",
-    "threshold": 25
-  },
-  {
-    "description": "Higgs boson research level 50!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-higgs-50",
-    "targetProperty": "level",
-    "targetKey": "research-higgs",
-    "threshold": 50
-  },
-  {
-    "description": "Higgs boson research level 100!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-higgs-100",
-    "targetProperty": "level",
-    "targetKey": "research-higgs",
-    "threshold": 100
-  },
-  {
-    "description": "D*s\u207b research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-dstars-5",
-    "targetProperty": "level",
-    "targetKey": "research-dstars",
-    "threshold": 5
-  },
-  {
-    "description": "D*s\u207b research level 25!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-dstars-25",
-    "targetProperty": "level",
-    "targetKey": "research-dstars",
-    "threshold": 25
-  },
-  {
-    "description": "D*s\u207b research level 50!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-dstars-50",
-    "targetProperty": "level",
-    "targetKey": "research-dstars",
-    "threshold": 50
-  },
-  {
-    "description": "D*s\u207b research level 100!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-dstars-100",
-    "targetProperty": "level",
-    "targetKey": "research-dstars",
-    "threshold": 100
-  },
-  {
-    "description": "\u039eb'- and \u039eb*- research level 5!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-xib-5",
-    "targetProperty": "level",
-    "targetKey": "research-xib",
-    "threshold": 5
-  },
-  {
-    "description": "\u039eb'- and \u039eb*- research level 25!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-xib-25",
-    "targetProperty": "level",
-    "targetKey": "research-xib",
-    "threshold": 25
-  },
-  {
-    "description": "\u039eb'- and \u039eb*- research level 50!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-xib-50",
-    "targetProperty": "level",
-    "targetKey": "research-xib",
-    "threshold": 50
-  },
-  {
-    "description": "\u039eb'- and \u039eb*- research level 100!",
-    "icon": "fa-cogs",
-    "key": "achievement-research-xib-100",
-    "targetProperty": "level",
-    "targetKey": "research-xib",
+    "targetKey": "research-vr",
     "threshold": 100
   },
   {
@@ -808,47 +608,7 @@
     "threshold": 1000000
   },
   {
-    "description": "100 data collected!",
-    "icon": "fa-database",
-    "key": "achievement-data-collected-100",
-    "targetProperty": "dataCollected",
-    "targetKey": "lab",
-    "threshold": 100
-  },
-  {
-    "description": "10k data collected!",
-    "icon": "fa-database",
-    "key": "achievement-data-collected-10k",
-    "targetProperty": "dataCollected",
-    "targetKey": "lab",
-    "threshold": 10000
-  },
-  {
-    "description": "1M data collected!",
-    "icon": "fa-database",
-    "key": "achievement-data-collected-1M",
-    "targetProperty": "dataCollected",
-    "targetKey": "lab",
-    "threshold": 1000000
-  },
-  {
-    "description": "100M data collected!",
-    "icon": "fa-database",
-    "key": "achievement-data-collected-100M",
-    "targetProperty": "dataCollected",
-    "targetKey": "lab",
-    "threshold": 100000000
-  },
-  {
-    "description": "10G data collected!",
-    "icon": "fa-database",
-    "key": "achievement-data-collected-10G",
-    "targetProperty": "dataCollected",
-    "targetKey": "lab",
-    "threshold": 10000000000
-  },
-  {
-    "description": "JTN 100 funding gathered!",
+    "description": "$100 funding gathered!",
     "icon": "fa-money",
     "key": "achievement-funding-collected-100",
     "targetProperty": "moneyCollected",
@@ -856,7 +616,7 @@
     "threshold": 100
   },
   {
-    "description": "JTN 10k funding gathered!",
+    "description": "$10k funding gathered!",
     "icon": "fa-money",
     "key": "achievement-funding-collected-10k",
     "targetProperty": "moneyCollected",
@@ -864,7 +624,7 @@
     "threshold": 10000
   },
   {
-    "description": "JTN 1M funding gathered!",
+    "description": "$1M funding gathered!",
     "icon": "fa-money",
     "key": "achievement-funding-collected-1M",
     "targetProperty": "moneyCollected",
@@ -872,7 +632,7 @@
     "threshold": 1000000
   },
   {
-    "description": "JTN 100M funding gathered!",
+    "description": "$100M funding gathered!",
     "icon": "fa-money",
     "key": "achievement-funding-collected-100M",
     "targetProperty": "moneyCollected",
@@ -880,7 +640,7 @@
     "threshold": 100000000
   },
   {
-    "description": "JTN 10G funding gathered!",
+    "description": "$10G funding gathered!",
     "icon": "fa-money",
     "key": "achievement-funding-collected-10G",
     "targetProperty": "moneyCollected",
@@ -888,47 +648,7 @@
     "threshold": 10000000000
   },
   {
-    "description": "100 data processed!",
-    "icon": "fa-hdd",
-    "key": "achievement-data-processed-100",
-    "targetProperty": "dataSpent",
-    "targetKey": "lab",
-    "threshold": 100
-  },
-  {
-    "description": "10k data processed!",
-    "icon": "fa-hdd",
-    "key": "achievement-data-processed-10k",
-    "targetProperty": "dataSpent",
-    "targetKey": "lab",
-    "threshold": 10000
-  },
-  {
-    "description": "1M data processed!",
-    "icon": "fa-hdd",
-    "key": "achievement-data-processed-1M",
-    "targetProperty": "dataSpent",
-    "targetKey": "lab",
-    "threshold": 1000000
-  },
-  {
-    "description": "100M data processed!",
-    "icon": "fa-hdd",
-    "key": "achievement-data-processed-100M",
-    "targetProperty": "dataSpent",
-    "targetKey": "lab",
-    "threshold": 100000000
-  },
-  {
-    "description": "10G data processed!",
-    "icon": "fa-hdd",
-    "key": "achievement-data-processed-10G",
-    "targetProperty": "dataSpent",
-    "targetKey": "lab",
-    "threshold": 10000000000
-  },
-  {
-    "description": "JTN 100 funding spent!",
+    "description": "$100 funding spent!",
     "icon": "fa-money",
     "key": "achievement-funding-spent-100",
     "targetProperty": "moneySpent",
@@ -936,7 +656,7 @@
     "threshold": 100
   },
   {
-    "description": "JTN 10k funding spent!",
+    "description": "$10k funding spent!",
     "icon": "fa-money",
     "key": "achievement-funding-spent-10k",
     "targetProperty": "moneySpent",
@@ -944,7 +664,7 @@
     "threshold": 10000
   },
   {
-    "description": "JTN 1M funding spent!",
+    "description": "$1M funding spent!",
     "icon": "fa-money",
     "key": "achievement-funding-spent-1M",
     "targetProperty": "moneySpent",
@@ -952,7 +672,7 @@
     "threshold": 1000000
   },
   {
-    "description": "JTN 100M funding spent!",
+    "description": "$100M funding spent!",
     "icon": "fa-money",
     "key": "achievement-funding-spent-100M",
     "targetProperty": "moneySpent",
@@ -960,7 +680,7 @@
     "threshold": 100000000
   },
   {
-    "description": "JTN 10G funding spent!",
+    "description": "$10G funding spent!",
     "icon": "fa-money",
     "key": "achievement-funding-spent-10G",
     "targetProperty": "moneySpent",
