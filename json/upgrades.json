@@ -66,7 +66,7 @@
         "icon": "fa-group",
         "cost": 9e4,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
-        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-apprentices1", "property": "used", "threshold": 1 }],
         "factor": 2
     },
     {
@@ -77,7 +77,7 @@
         "icon": "fa-group",
         "cost": 3e5,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
-        "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
+        "requirements": [{ "key": "upgrade-workers-apprentices2", "property": "used", "threshold": 1 }],
         "factor": 2
     },
 
@@ -98,7 +98,7 @@
         "description": "They've been a part of the company for so many years they deserve this (illegal, fake, tin-plated) gold watch.",
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
-        "cost": 4e6,
+        "cost": 9e6,
         "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
         "requirements": [{ "key": "workers-journeypersons1", "property": "hired", "threshold": 5 }],
         "factor": 2
