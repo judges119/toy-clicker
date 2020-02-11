@@ -53,8 +53,8 @@ var GameObjects = (function() {
     this.state.money += amount;
     this.state.moneyCollected += amount;
     var id = Math.floor(Math.random() * 1000);
-    var penisx = Math.floor(Math.random() * 400);
-    var vaginax = Math.floor(Math.random() * 400);
+    var penisx = Math.floor(Math.random() * 400) - 200;
+    var vaginax = Math.floor(Math.random() * 400) - 200;
     $('#detector').append('<img class="animation-target sextoy penis' + id + '" src="assets/penis.svg" style="left: ' + penisx + 'px">');
     $('#detector').append('<img class="animation-target sextoy vagina' + id + '" src="assets/vagina.svg" style="left: ' + vaginax + 'px">');
     setTimeout(function() {

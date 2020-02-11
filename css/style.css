@@ -339,4 +339,8 @@ h1 br {
   position: absolute;
   height: 50px;
   width: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
