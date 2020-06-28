@@ -65,7 +65,7 @@
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
         "cost": 9e3,
-        "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
+        "targets": [{ "key": "workers-journeypersons", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-journeypersons1", "property": "used", "threshold": 1 }],
         "factor": 2
     },
@@ -76,7 +76,7 @@
         "effect": "Journeypersons produce twice as much per second.",
         "icon": "fa-group",
         "cost": 3e4,
-        "targets": [{ "key": "workers-journeypersons1", "property": "rate" }],
+        "targets": [{ "key": "workers-journeypersons", "property": "rate" }],
         "requirements": [{ "key": "upgrade-workers-journeypersons2", "property": "used", "threshold": 1 }],
         "factor": 2
     },
@@ -294,7 +294,7 @@
             { "key": "workers-robots", "property": "rate" },
             { "key": "workers-cyborgs", "property": "rate" },
             { "key": "workers-masters-students", "property": "rate" },
-            { "key": "workers-phds-candidates", "property": "rate" },
+            { "key": "workers-phd-candidates", "property": "rate" },
             { "key": "workers-postdocs", "property": "rate" },
             { "key": "workers-tenured", "property": "rate" }
         ],
@@ -327,7 +327,7 @@
             { "key": "workers-robots", "property": "rate" },
             { "key": "workers-cyborgs", "property": "rate" },
             { "key": "workers-masters-students", "property": "rate" },
-            { "key": "workers-phds-candidates", "property": "rate" },
+            { "key": "workers-phd-candidates", "property": "rate" },
             { "key": "workers-postdocs", "property": "rate" },
             { "key": "workers-tenured", "property": "rate" }
         ],
