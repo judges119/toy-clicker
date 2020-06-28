@@ -292,7 +292,7 @@
     "icon": "fa-user",
     "key": "achievement-workers-masterstudents-1",
     "threshold": 1,
-    "targetKey": "workers-masterstudents",
+    "targetKey": "workers-masters-students",
     "targetProperty": "hired"
   },
   {
@@ -300,7 +300,7 @@
     "icon": "fa-user",
     "key": "achievement-workers-phdstudents-1",
     "threshold": 1,
-    "targetKey": "workers-phdstudents",
+    "targetKey": "workers-phd-candidates",
     "targetProperty": "hired"
   },
   {
@@ -316,7 +316,7 @@
     "icon": "fa-user",
     "key": "achievement-workers-profs-1",
     "threshold": 1,
-    "targetKey": "workers-profs",
+    "targetKey": "workers-tenured",
     "targetProperty": "hired"
   },
   {
@@ -516,7 +516,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-5",
     "targetProperty": "hired",
-    "targetKey": "workers-masterstudents",
+    "targetKey": "workers-masters-students",
     "threshold": 5
   },
   {
@@ -524,7 +524,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-25",
     "targetProperty": "hired",
-    "targetKey": "workers-masterstudents",
+    "targetKey": "workers-masters-students",
     "threshold": 25
   },
   {
@@ -532,7 +532,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-50",
     "targetProperty": "hired",
-    "targetKey": "workers-masterstudents",
+    "targetKey": "workers-masters-students",
     "threshold": 50
   },
   {
@@ -540,7 +540,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-masterstudents-100",
     "targetProperty": "hired",
-    "targetKey": "workers-masterstudents",
+    "targetKey": "workers-masters-students",
     "threshold": 100
   },
   {
@@ -548,7 +548,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-5",
     "targetProperty": "hired",
-    "targetKey": "workers-phdstudents",
+    "targetKey": "workers-phd-candidates",
     "threshold": 5
   },
   {
@@ -556,7 +556,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-25",
     "targetProperty": "hired",
-    "targetKey": "workers-phdstudents",
+    "targetKey": "workers-phd-candidates",
     "threshold": 25
   },
   {
@@ -564,7 +564,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-50",
     "targetProperty": "hired",
-    "targetKey": "workers-phdstudents",
+    "targetKey": "workers-phd-candidates",
     "threshold": 50
   },
   {
@@ -572,7 +572,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-phdstudents-100",
     "targetProperty": "hired",
-    "targetKey": "workers-phdstudents",
+    "targetKey": "workers-phd-candidates",
     "threshold": 100
   },
   {
@@ -612,7 +612,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-profs-5",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-tenured",
     "threshold": 5
   },
   {
@@ -620,7 +620,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-profs-25",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-tenured",
     "threshold": 25
   },
   {
@@ -628,7 +628,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-profs-50",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-tenured",
     "threshold": 50
   },
   {
@@ -636,7 +636,7 @@
     "icon": "fa-users",
     "key": "achievement-workers-profs-100",
     "targetProperty": "hired",
-    "targetKey": "workers-profs",
+    "targetKey": "workers-tenured",
     "threshold": 100
   },
   {
